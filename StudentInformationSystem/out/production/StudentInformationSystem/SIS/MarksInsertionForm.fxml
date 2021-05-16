@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIS.MarksInsertionQuery">
+        <children>
+            <Label layoutX="161.0" layoutY="38.0" text="Student Marks Insertion Form">
+                <font>
+                    <Font name="Calibri Bold" size="28.0" />
+                </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="155.0" prefHeight="35.0" prefWidth="113.0" text="StudentID">
+                <font>
+                    <Font name="Calibri" size="26.0" />
+                </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="206.0" prefHeight="35.0" prefWidth="80.0" text="Marks">
+                <font>
+                    <Font name="Calibri" size="26.0" />
+                </font>
+            </Label>
+            <TextField id="studentID" fx:id="id" layoutX="264.0" layoutY="156.0" prefHeight="32.0" prefWidth="210.0" style="-fx-background-radius: 25;">
+                <font>
+                    <Font size="16.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+            </TextField>
+            <TextField id="marks" fx:id="marks" layoutX="264.0" layoutY="208.0" prefHeight="32.0" prefWidth="210.0" style="-fx-background-radius: 25;">
+                <font>
+                    <Font size="16.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="TEXT" />
+                </cursor>
+            </TextField>
+
+            <Button id="insertMarks" fx:id="insert" alignment="CENTER" contentDisplay="CENTER" layoutX="264.0" layoutY="264.0" mnemonicParsing="false" onAction="#insert" prefHeight="36.0" prefWidth="210.0" text="Insert">
+                <font>
+                    <Font name="Calibri" size="19.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <!--      <Button fx:id="logout" layoutX="516.0" layoutY="406.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: red;" text="Logout" textFill="WHITE">-->
+            <!--         <font>-->
+            <!--            <Font name="Calibri" size="18.0" />-->
+            <!--         </font>-->
+            <!--         <cursor>-->
+            <!--            <Cursor fx:constant="HAND" />-->
+            <!--         </cursor>-->
+            <!--      </Button>-->
+            <Button id="logout" fx:id="logout" layoutX="516.0" layoutY="408.0" mnemonicParsing="false" onAction="#logout" text="Logout" textFill="WHITE">
+                <font>
+                    <Font name="Calibri" size="19.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+            <Button id="back" fx:id="back" layoutX="40.0" layoutY="406.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="Back">
+                <font>
+                    <Font name="Calibri" size="17.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </children>
+
+
+
+
+
+
+
+</AnchorPane>

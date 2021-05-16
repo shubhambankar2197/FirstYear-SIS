@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.DeleteStudentData">
+   <children>
+      <Button id="DropButton" fx:id="dropButton" layoutX="238.0" layoutY="181.0" mnemonicParsing="false" onAction="#dropentry" prefHeight="26.0" prefWidth="96.0" text="Drop" />
+      <TextField id="studentIdForDrop" fx:id="stuIdforDrop" alignment="CENTER" layoutX="206.0" layoutY="119.0" prefHeight="37.0" prefWidth="174.0" promptText="student id" />
+      <Label layoutX="70.0" layoutY="80.0" text="Enter Student Id whose data needs to be dropped">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #36093b;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <Label layoutX="227.0" layoutY="29.0" text="Admin Controls" textFill="#fffefe">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button id="addStudentInfo" fx:id="addingStuInfo" layoutX="161.0" layoutY="104.0" mnemonicParsing="false" onAction="#addStuInfo" prefHeight="44.0" prefWidth="345.0" text="Add new Student's Info" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="updateStudentInfo" fx:id="updateStuInfo" layoutX="162.0" layoutY="168.0" mnemonicParsing="false" onAction="#updateStuInfo" prefHeight="44.0" prefWidth="345.0" text="Update any Student's Info" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="deleteStudentInfo" fx:id="deleteStuInfo" layoutX="160.0" layoutY="230.0" mnemonicParsing="false" onAction="#deleteStudentData" prefHeight="44.0" prefWidth="345.0" text="Delete any Student's info" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="logout" fx:id="logout" layoutX="504.0" layoutY="387.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Logout" textFill="WHITE" onAction="#logout">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="insertStaffInfo" id="insertStaffInfo" layoutX="161.0" layoutY="295.0" mnemonicParsing="false" onAction="#addStaffInfo" prefHeight="44.0" prefWidth="345.0" text="Add Staff's info" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

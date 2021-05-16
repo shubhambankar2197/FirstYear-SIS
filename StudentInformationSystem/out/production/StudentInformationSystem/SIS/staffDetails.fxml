@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #063d49;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIS.staffDetails">
+   <children>
+      <Button id="stuMarks" fx:id="addStuMarks" layoutX="175.0" layoutY="94.0" mnemonicParsing="false" onAction="#addStuMarks" prefHeight="42.0" prefWidth="311.0" text="Add Student Marks">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="stuAttendance" fx:id="addStudentAttendance" layoutX="175.0" layoutY="159.0" mnemonicParsing="false" onAction="#addStuAttendance" prefHeight="42.0" prefWidth="311.0" styleClass="stuAttendance" text="Add Student Attendance">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="stuDetailsButton" fx:id="viewStuDetails" layoutX="175.0" layoutY="291.0" mnemonicParsing="false" onAction="#viewStuDetails" prefHeight="42.0" prefWidth="311.0" text="View Student Details">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="logout" fx:id="logout" layoutX="516.0" layoutY="408.0" mnemonicParsing="false" onAction="#logout" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="224.0" layoutY="35.0" text="Staff Operations" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button id="createEliList" fx:id="createEliList" layoutX="174.0" layoutY="224.0" mnemonicParsing="false" onAction="#createEliList" prefHeight="42.0" prefWidth="311.0" text="Create Eligibility List">
+         <font>
+            <Font name="Calibri" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

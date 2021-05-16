@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIS.MarksDetails">
+   <children>
+      <Label layoutX="172.0" layoutY="109.0" text="*Click on the table below to view marks">
+         <font>
+            <Font name="Calibri Italic" size="17.0" />
+         </font>
+      </Label>
+      <Button id="showTotal" fx:id="showTotal" layoutX="138.0" layoutY="254.0" mnemonicParsing="false" onAction="#showTotal" prefHeight="35.0" prefWidth="145.0" text="Show Total">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea id="showTotalTextField" fx:id="showTotalTextField" editable="false" layoutX="317.0" layoutY="248.0" prefHeight="31.0" prefWidth="82.0" />
+      <Button id="showPer" fx:id="showPer" layoutX="138.0" layoutY="313.0" mnemonicParsing="false" onAction="#showPer" text="Show Percentage">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea id="showPerTextField" fx:id="showPerTextField" editable="false" layoutX="317.0" layoutY="309.0" prefHeight="31.0" prefWidth="82.0" />
+      <Button id="back" fx:id="back" layoutX="40.0" layoutY="406.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="Back">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="203.0" layoutY="33.0" prefHeight="28.0" prefWidth="218.0" text="Report Card" underline="true">
+         <font>
+            <Font name="Calibri" size="33.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reportCard" layoutX="18.0" layoutY="137.0" onMouseClicked="#reportCard" prefHeight="65.0" prefWidth="609.0">
+        <columns>
+          <TableColumn id="subject1" fx:id="subject1" prefWidth="142.0" text="subject1" />
+          <TableColumn fx:id="subject2" prefWidth="165.0" text="subject2" />
+            <TableColumn fx:id="subject3" prefWidth="159.0" text="subject3" />
+            <TableColumn fx:id="subject4" prefWidth="142.0" text="subject4" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

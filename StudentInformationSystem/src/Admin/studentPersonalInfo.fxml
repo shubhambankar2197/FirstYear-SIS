@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: maroon;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.InsertQuery">
+   <children>
+<!--FIRSTNAME-->
+      <TextField id="firstName" fx:id="firstName" layoutX="40.0" layoutY="61.0" promptText="First Name" />
+<!--MIDDLENAME-->
+      <TextField id="middleName" fx:id="middleName" layoutX="225.0" layoutY="61.0" promptText="Middle Name" />
+<!--LASTNAME-->
+      <TextField id="lastName" fx:id="lastName" layoutX="412.0" layoutY="61.0" promptText="Last Name" />
+<!--STUID-->
+      <TextField id="stuID" fx:id="stuID" layoutX="127.0" layoutY="109.0" promptText="StudentID" />
+<!--PASSWORD-->
+      <TextField id="password" fx:id="password" layoutX="310.0" layoutY="108.0" promptText="Password" />
+
+<!--GENDER-->
+      <Label layoutX="47.0" layoutY="160.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <RadioButton id="male" fx:id="male" layoutX="128.0" layoutY="162.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="female" fx:id="female" layoutX="212.0" layoutY="161.0" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gender">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+
+<!-- DOB        -->
+      <Label layoutX="323.0" layoutY="162.0" text="DOB" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <DatePicker id="dob" fx:id="dob" layoutX="379.0" layoutY="162.0" prefHeight="26.0" prefWidth="213.0" promptText="01/01/1997" />
+
+<!--DEPARTMENT           -->
+      <Label layoutX="41.0" layoutY="216.0" prefHeight="27.0" prefWidth="121.0" text="Department" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox id="department" fx:id="department" layoutX="164.0" layoutY="217.0" prefHeight="26.0" prefWidth="213.0" promptText="select department">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="cs" fx:value="computer engineering" />
+               <String fx:id="ee" fx:value="electrical engineering" />
+               <String fx:id="extc" fx:value="electronics engineering" />
+               <String fx:id="me" fx:value="mechanical engineering" />
+               <String fx:id="ae" fx:value="automobile engineering" />
+               <String fx:id="it" fx:value="information technology" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+<!-- YEAR            -->
+      <Label layoutX="396.0" layoutY="214.0" text="Year" textFill="#fffefe">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+
+      <ComboBox id="year" fx:id="year" layoutX="458.0" layoutY="214.0" prefHeight="26.0" prefWidth="137.0" promptText="select Year">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:id="firstBtech" fx:value="First-B.Tech" />
+               <String fx:id="secondBtech" fx:value="Second-B.Tech" />
+               <String fx:id="thirdBtech" fx:value="Third-B.Tech" />
+               <String fx:id="finalBtech" fx:value="Final-B.Tech" />
+               <String fx:id="firstMtech" fx:value="First-M.Tech" />
+               <String fx:id="finalMtech" fx:value="Final-M.Tech" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+
+<!--MOBILE NO-->
+      <Label layoutX="123.0" layoutY="268.0" text="Mobile Number" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <TextField id="mobileNo" fx:id="mobileNo" layoutX="283.0" layoutY="267.0" prefHeight="26.0" prefWidth="198.0" promptText="98xxxxxxxx" />
+
+<!--EMAIL-->
+      <TextField id="email" fx:id="email" layoutX="200.0" layoutY="317.0" prefHeight="26.0" prefWidth="341.0" promptText="abc@pqr.com" />
+
+      <Label layoutX="129.0" layoutY="317.0" text="E-mail" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+
+<!--INSERT BUTTON-->
+      <Button id="insertInfo" fx:id="insertInfo" layoutX="292.0" layoutY="364.0" mnemonicParsing="false" onAction="#insertQuery" prefHeight="0.0" prefWidth="105.0" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+<!--      BACK BUTTON-->
+      <Button id="back" fx:id="back" layoutX="30.0" layoutY="422.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="Back">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="181.0" layoutY="14.0" text="Adding new Student Info" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

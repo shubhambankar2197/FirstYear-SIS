@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: olive;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIS.studentDetails">
+   <children>
+      <TableView fx:id="stuDetails" layoutX="4.0" layoutY="116.0" onMouseClicked="#showdata" prefHeight="75.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="144.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="166.0" text="NAME" />
+            <TableColumn fx:id="department" prefWidth="221.0" text="DEPARTMENT" />
+            <TableColumn fx:id="year" prefWidth="100.0" text="YEAR" />
+        </columns>
+      </TableView>
+      <Button id="attendanceButton" fx:id="attendanceDetails" layoutX="148.0" layoutY="213.0" mnemonicParsing="false" onAction="#attendanceDetails" prefHeight="36.0" prefWidth="359.0" stylesheets="@sis.css" text="Attendance Details" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+          <cursor>
+              <Cursor fx:constant="HAND" />
+          </cursor>
+      </Button>
+      <Button id="marksButton" fx:id="MarksDetails" layoutX="151.0" layoutY="265.0" mnemonicParsing="false" onAction="#marksDetails" prefHeight="36.0" prefWidth="359.0" text="Marks Details" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+          <cursor>
+              <Cursor fx:constant="HAND" />
+          </cursor>
+      </Button>
+      <Button id="eligibilityButton" fx:id="eligibilityList" layoutX="151.0" layoutY="320.0" mnemonicParsing="false" onAction="#eligibilityDetails" prefHeight="36.0" prefWidth="359.0" stylesheets="@sis.css" text="Eligibility List" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+          <cursor>
+              <Cursor fx:constant="HAND" />
+          </cursor>
+      </Button>
+
+      <Button id="logout" fx:id="logout" alignment="CENTER" layoutX="517.0" layoutY="416.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="91.0" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="254.0" layoutY="35.0" text="Student Details" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" layoutY="92.0" text="*Click on the table to view your details">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="59.0" layoutX="194.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@graduate.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

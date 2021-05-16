@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #4f524e;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminLoginController">
+    <children>
+        <Button id="adminLogin" fx:id="adminlogin" layoutX="243.0" layoutY="374.0" mnemonicParsing="false" onAction="#adminLogin" stylesheets="@sis.css" text="Admin Login">
+            <font>
+                <Font name="Calibri" size="19.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+
+        <TextField id="adminUsername" fx:id="adminUsername" layoutX="189.0" layoutY="270.0" prefHeight="26.0" prefWidth="245.0" promptText="username" stylesheets="@sis.css">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="Calibri" size="16.0" />
+            </font>
+        </TextField>
+        <PasswordField id="adminPassword" fx:id="adminPassword" layoutX="189.0" layoutY="319.0" prefHeight="26.0" prefWidth="245.0" promptText="password">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="Calibri" size="16.0" />
+            </font>
+        </PasswordField>
+        <Label layoutX="269.0" layoutY="198.0" text="Login" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="38.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="133.0" fitWidth="149.0" layoutX="238.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sis1.png" />
+         </image>
+      </ImageView>
+<!--        <ImageView fitHeight="114.0" fitWidth="162.0" layoutX="238.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">-->
+<!--            <image>-->
+<!--                <Image url="@sis1.png" />-->
+<!--            </image>-->
+<!--        </ImageView>-->
+    </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="attendanceDetailsfxml" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SIS.AttendanceQuery">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <Label alignment="CENTER" layoutX="160.0" layoutY="75.0" prefHeight="46.0" prefWidth="338.0" text="Attendance Details">
+         <font>
+            <Font name="Calibri Bold" size="40.0" />
+         </font>
+      </Label>
+<!--      <Button fx:id="back" layoutX="189.0" layoutY="384.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: yellow;" text="Back">-->
+<!--         <font>-->
+<!--            <Font name="Calibri" size="19.0" />-->
+<!--         </font>-->
+<!--          <cursor>-->
+<!--              <Cursor fx:constant="HAND" />-->
+<!--          </cursor>-->
+<!--      </Button>-->
+
+       <Button id="back" fx:id="back" layoutX="40.0" layoutY="406.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="Back">
+           <font>
+               <Font name="Calibri" size="17.0" />
+           </font>
+           <cursor>
+               <Cursor fx:constant="HAND" />
+           </cursor>
+       </Button>
+      <TableView fx:id="subWiseTable" layoutX="31.0" layoutY="150.0" prefHeight="76.0" prefWidth="573.0">
+        <columns>
+          <TableColumn id="subWiseAttendance" fx:id="sub1" prefWidth="150.0" text="Subject 1" />
+          <TableColumn fx:id="sub2" prefWidth="151.0" text="Subject 2" />
+            <TableColumn fx:id="sub3" prefWidth="135.0" text="Subject 3" />
+            <TableColumn fx:id="sub4" prefWidth="135.0" text="Subject 4" />
+        </columns>
+      </TableView>
+      <Button id="SubWiseButton" fx:id="viewSubWise" layoutX="191.0" layoutY="255.0" mnemonicParsing="false" onAction="#subWise" prefHeight="42.0" prefWidth="199.0" stylesheets="@sis.css" text="View SubjectWise">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="OverallButton" fx:id="viewOverall" layoutX="191.0" layoutY="314.0" mnemonicParsing="false" onAction="#viewOverall" prefHeight="42.0" prefWidth="199.0" stylesheets="@sis.css" text="View Overall">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea id="totalAttendance" fx:id="totalAttendance" layoutX="401.0" layoutY="315.0" prefHeight="42.0" prefWidth="29.0" promptText="XX" />
+      <Label layoutX="456.0" layoutY="328.0" text="(Out of 40)">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

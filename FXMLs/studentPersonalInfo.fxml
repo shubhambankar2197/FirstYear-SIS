@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: maroon;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="insertStuInfo">
+   <children>
+      <Label layoutX="47.0" layoutY="150.0" text="Sex" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="152.0" text="DOB" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="258.0" text="Mobile Number" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <TextField id="mobileNo" layoutX="283.0" layoutY="257.0" prefHeight="26.0" prefWidth="198.0" promptText="98xxxxxxxx" />
+      <Button id="insertInfo" layoutX="292.0" layoutY="362.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="105.0" style="-fx-background-color: #2b7253;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker id="dob" fx:id="dob" layoutX="379.0" layoutY="152.0" prefHeight="26.0" prefWidth="213.0" promptText="01/01/1997" />
+      <RadioButton id="male" fx:id="male" layoutX="95.0" layoutY="152.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton id="female" fx:id="female" layoutX="194.0" layoutY="152.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </RadioButton>
+      <Button id="back" layoutX="40.0" layoutY="411.0" mnemonicParsing="false" style="-fx-background-color: yellow;" text="Back">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="firstName" layoutX="40.0" layoutY="51.0" promptText="First Name" />
+      <TextField fx:id="middleName" layoutX="225.0" layoutY="51.0" promptText="Middle Name" />
+      <TextField fx:id="lastname" layoutX="412.0" layoutY="51.0" promptText="Last Name" />
+      <ChoiceBox id="department" fx:id="department" layoutX="164.0" layoutY="206.0" prefHeight="26.0" prefWidth="171.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label layoutX="41.0" layoutY="206.0" prefHeight="27.0" prefWidth="121.0" text="Department" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+      <ComboBox id="year" fx:id="year" layoutX="478.0" layoutY="206.0" prefHeight="26.0" prefWidth="105.0" />
+      <Label layoutX="413.0" layoutY="205.0" text="Year" textFill="#fffefe">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField id="stuID" fx:id="stuID" layoutX="127.0" layoutY="99.0" promptText="StudentID" />
+      <TextField id="password" fx:id="password" layoutX="310.0" layoutY="98.0" promptText="Password" />
+      <TextField id="email" layoutX="200.0" layoutY="307.0" prefHeight="26.0" prefWidth="341.0" promptText="abc@pqr.com" />
+      <Label layoutX="129.0" layoutY="307.0" text="E-mail" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

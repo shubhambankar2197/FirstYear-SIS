@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: maroon;" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UpdateQuery">
+    <children>
+        <!--FIRSTNAME-->
+        <TextField id="firstName" fx:id="firstName" layoutX="40.0" layoutY="61.0" promptText="First Name" />
+        <!--MIDDLENAME-->
+        <TextField id="middleName" fx:id="middleName" layoutX="225.0" layoutY="61.0" promptText="Middle Name" />
+        <!--LASTNAME-->
+        <TextField id="lastName" fx:id="lastName" layoutX="412.0" layoutY="61.0" promptText="Last Name" />
+        <!--PASSWORD-->
+        <TextField id="password" fx:id="password" layoutX="226.0" layoutY="108.0" promptText="Password" />
+
+        <!-- DOB        -->
+        <Label layoutX="174.0" layoutY="157.0" text="DOB" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="23.0" />
+            </font>
+        </Label>
+        <DatePicker id="dob" fx:id="dob" layoutX="230.0" layoutY="157.0" prefHeight="26.0" prefWidth="213.0" promptText="01/01/1997" />
+
+
+        <!--MOBILE NO-->
+        <Label layoutX="123.0" layoutY="205.0" text="Mobile Number" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="23.0" />
+            </font>
+        </Label>
+        <TextField id="mobileNo" fx:id="mobileNo" layoutX="283.0" layoutY="204.0" prefHeight="26.0" prefWidth="198.0" promptText="98xxxxxxxx" />
+
+        <!--EMAIL-->
+        <TextField id="email" fx:id="email" layoutX="200.0" layoutY="254.0" prefHeight="26.0" prefWidth="341.0" promptText="abc@pqr.com" />
+
+        <Label layoutX="129.0" layoutY="254.0" text="E-mail" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="23.0" />
+            </font>
+        </Label>
+
+        <!--INSERT BUTTON-->
+        <Button id="insertInfo" fx:id="insertInfo" layoutX="284.0" layoutY="324.0" mnemonicParsing="false" onAction="#insertQuery" prefHeight="0.0" prefWidth="105.0" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="27.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <!--      BACK BUTTON-->
+        <Button id="back" fx:id="back" layoutX="30.0" layoutY="422.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: yellow; -fx-background-radius: 25;" text="Back">
+            <font>
+                <Font name="Calibri" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="181.0" layoutY="14.0" text="Updating Student Info" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

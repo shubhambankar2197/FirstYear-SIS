@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UpdateStudentInfo">
+   <children>
+      <TextField id="updateStudentid" fx:id="updateStudentid" layoutX="206.0" layoutY="95.0" prefHeight="35.0" prefWidth="171.0" promptText="student id" stylesheets="@sis.css" />
+      <Label layoutX="91.0" layoutY="62.0" text="Enter Student ID whose details you want to update">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="fname" layoutX="36.0" layoutY="170.0" mnemonicParsing="false" text="First Name" />
+      <Button id="updateFieldButton" fx:id="updateInfo" layoutX="206.0" layoutY="312.0" mnemonicParsing="false" onAction="#UpdateDetails" prefHeight="26.0" prefWidth="171.0" text="Update Fields" />
+      <CheckBox fx:id="dob" layoutX="293.0" layoutY="266.0" mnemonicParsing="false" text="DOB" />
+      <CheckBox fx:id="email" layoutX="292.0" layoutY="217.0" mnemonicParsing="false" text="Email" />
+      <Label layoutX="155.0" layoutY="138.0" text="Select fields you want to update">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="mname" layoutX="292.0" layoutY="171.0" mnemonicParsing="false" text="Middle Name" />
+      <CheckBox fx:id="lname" layoutX="36.0" layoutY="216.0" mnemonicParsing="false" text="Last Name" />
+      <CheckBox fx:id="mnumber" layoutX="37.0" layoutY="265.0" mnemonicParsing="false" text="Mobile No" />
+      <TextField fx:id="UpdatedfirstName" layoutX="138.0" layoutY="167.0" prefHeight="26.0" prefWidth="134.0" promptText="first name" />
+      <TextField fx:id="UpdatedmiddleName" layoutX="409.0" layoutY="167.0" prefHeight="26.0" prefWidth="134.0" promptText="middle name" />
+      <TextField fx:id="UpdatedlastName" layoutX="138.0" layoutY="213.0" prefHeight="26.0" prefWidth="134.0" promptText="last name" />
+      <TextField fx:id="Updatedemail" layoutX="358.0" layoutY="213.0" prefHeight="26.0" prefWidth="216.0" promptText="email" />
+      <DatePicker fx:id="UpdatedDOB" layoutX="361.0" layoutY="262.0" promptText="1/1/1997" />
+      <TextField fx:id="UpdatedmobileNo" layoutX="138.0" layoutY="262.0" prefHeight="26.0" prefWidth="134.0" promptText="mobile no" />
+   </children>
+</AnchorPane>

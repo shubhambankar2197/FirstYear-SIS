@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="InsertStaffDetails" fx:id="AddingStaffDetails" prefHeight="400.0" prefWidth="600.0" stylesheets="@sis.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AddingStaffDetails">
+   <children>
+      <TextField id="StaffName" fx:id="StaffName" layoutX="126.0" layoutY="74.0" promptText="Staff name" style="-fx-background-radius: 0; -fx-background-insets: 0, 0 0 1 0;" stylesheets="@sis.css" />
+      <TextField id="StaffID" fx:id="StaffID" layoutX="339.0" layoutY="75.0" promptText="Staff id" style="-fx-background-insets: 0, 0 0 1 0;" />
+      <TextField id="StaffPass" fx:id="StaffPassword" layoutX="225.0" layoutY="120.0" promptText="Staff Password" />
+      <TextField id="Department" fx:id="Department" layoutX="129.0" layoutY="209.0" promptText="Department" />
+      <TextField id="StaffSub" fx:id="Subject" layoutX="339.0" layoutY="209.0" promptText="Subject" />
+      <TextField id="Desig" fx:id="Designation" layoutX="225.0" layoutY="163.0" promptText="Designation" />
+      <Button fx:id="InserStaffDetails" layoutX="225.0" layoutY="270.0" mnemonicParsing="false" onAction="#InsertStaffDetails" prefHeight="26.0" prefWidth="155.0" text="Add Details" />
+   </children>
+</AnchorPane>
